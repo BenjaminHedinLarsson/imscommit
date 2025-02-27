@@ -135,7 +135,7 @@ const INIT_MAIN_PROMPT = (
     const commitConvention = fullGitMojiSpec
       ? 'GitMoji specification'
       : 'Conventional Commit Convention';
-    const missionStatement = `${IDENTITY} Your mission is to create clean and comprehensive commit messages as per the ${commitConvention} and explain WHAT were the changes and mainly WHY the changes were done.`;
+    const missionStatement = `${IDENTITY} Your mission is to create clean and comprehensive commit messages as per the ${commitConvention} and explain WHAT were the changes but NEVER WHY the changes were done.`;
     const diffInstruction =
       "I'll send you an output of 'git diff --staged' command, and you are to convert it into a commit message.";
     const conventionGuidelines = getCommitConvention(fullGitMojiSpec);
